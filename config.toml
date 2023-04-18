@@ -1,0 +1,91 @@
+baseURL = "https://today-calm.github.io/"
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-CN"
+hasCJKLanguage = true
+title = "TC 的空间"
+
+theme = "DoIt"
+
+[params]
+  [params.header]
+    [params.header.title]
+      name = "TC 的空间"
+
+  [params.footer]
+    enable = true
+    # 是否显示 Hugo 和主题信息
+    hugo = true
+    # 托管服务信息 (支持 HTML 格式)
+    hostedOn = '<a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>' 
+    copyright = true
+    since = 2023
+
+  # 主页配置
+  [params.home]
+    [params.home.profile]
+      enable = true
+      # 主页显示头像的 URL
+      # 将你的头像文件放置于 static 或者 assets 目录下
+      # 文件路径是相对于 static 或者 assets 目录的
+      avatarURL = "/moon.jpg"
+      subtitle = "没想好的话"
+      # 是否为副标题显示打字机动画
+      typeit = true
+      # 是否显示社交账号
+      social = false
+    [params.home.posts]
+      enable = true
+      paginate = 5
+
+  # 文章页面配置
+  [params.page]
+    # 是否使用 ruby 扩展语法
+    ruby = false
+    # 是否使用 fraction 扩展语法
+    fraction = false
+    # 是否使用 fontawesome 扩展语法
+    fontawesome = false
+    # KaTeX 数学公式
+    [params.page.math]
+      enable = false
+    # 相关文章推荐配置
+    [params.page.related]
+      enable = false
+
+  [params.search]
+    enable = true
+    # 搜索引擎的类型 ("algolia", "fuse")
+    type = "fuse"
+    [params.search.fuse]
+      minMatchCharLength = 1
+
+# 作者配置
+[author]
+  name = " "
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "归档"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about"
+    weight = 3
+
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+# Hugo 输出文档的设置（搜索要用到）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
