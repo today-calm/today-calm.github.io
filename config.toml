@@ -51,6 +51,15 @@ theme = "DoIt"
     # 相关文章推荐配置
     [params.page.related]
       enable = false
+    # 目录配置
+    [params.page.toc]
+      # 是否使用目录
+      enable = true
+      # 是否保持使用文章前面的静态目录
+      # 必须显示指定！
+      keepStatic = false
+      # 是否使侧边目录自动折叠展开
+      auto = false
 
   [params.search]
     enable = true
@@ -75,17 +84,37 @@ theme = "DoIt"
     url = "/categories/"
     weight = 2
   [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about"
-    weight = 3
+    weight = 4
 
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
 
 # Hugo 输出文档的设置（搜索要用到）
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+# 渲染时忽略 obsidian 文件
+# https://gohugo.io/getting-started/configuration/#ignore-content-and-data-files-when-rendering
+# https://gohugo.io/hugo-modules/configuration/#module-config-mounts
+[module]
+[[module.mounts]]
+  # 经测试，点开头的目录不会被打包，不用添加到这里了
+  # glob 与正则写法不同
+  # 若要忽略多个目录，需要写成 {folder1,folder2}（逗号后不能空格）
+  excludeFiles = 'posts/{template}/*'
+  source = 'content'
+  target = 'content'

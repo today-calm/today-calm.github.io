@@ -1,1 +1,11 @@
+# https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/
+
 .DS_Store
+
+# hugo 打包目录
+/public/
+
+# obsidian 文件
+.obsidian/
+.trash/
+/content/posts/template/
