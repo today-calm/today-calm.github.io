@@ -1,10 +1,11 @@
 ---
 title: "Obsidian上手"
 date: 2023-04-19T22:15:14+08:00
-lastmod: 2023-04-22T23:29:24+08:00
+lastmod: 2023-04-23T01:18:20+08:00
 categories: ["工具"]
 tags: ["笔记"]
 summary: "Markdown 笔记软件 Obsidian 的使用方法"
+featuredImage: "/assets/截屏2023-04-23%2000.58.01.png"
 ---
 
 官方帮助文档：[Obsidian Help](https://help.obsidian.md/Obsidian/Index)
