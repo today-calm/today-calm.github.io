@@ -107,14 +107,19 @@ theme = "DoIt"
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# 渲染时忽略 obsidian 文件
-# https://gohugo.io/getting-started/configuration/#ignore-content-and-data-files-when-rendering
-# https://gohugo.io/hugo-modules/configuration/#module-config-mounts
+# 配合 Obsidian，需要对目录重新映射
 [module]
+# 渲染时忽略 obsidian 文件
+# 经测试，点开头的目录不会被打包，不用添加到这里了
+# glob 与正则写法不同。若要忽略多个目录，需要写成 {folder1,folder2}，注意逗号后不能有空格
 [[module.mounts]]
-  # 经测试，点开头的目录不会被打包，不用添加到这里了
-  # glob 与正则写法不同
-  # 若要忽略多个目录，需要写成 {folder1,folder2}（逗号后不能空格）
-  excludeFiles = 'posts/{template}/*'
+  excludeFiles = 'posts/{template,assets}/*'
   source = 'content'
   target = 'content'
+# 映射 assets 目录，以保证图片正常展示
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+[[module.mounts]]
+  source = 'content/posts/assets'
+  target = 'static/assets'
