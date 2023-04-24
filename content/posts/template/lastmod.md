@@ -1,1 +1,0 @@
-lastmod: <% tp.file.last_modified_date("YYYY-MM-DD[T]HH:mm:ss[+08:00]") %>
