@@ -10,6 +10,7 @@ theme = "DoIt"
   [params.header]
     [params.header.title]
       name = "TC 的空间"
+      pre = "<i class='fas fa-home'></i>"
 
   [params.footer]
     enable = true
@@ -28,7 +29,7 @@ theme = "DoIt"
       # 将你的头像文件放置于 static 或者 assets 目录下
       # 文件路径是相对于 static 或者 assets 目录的
       avatarURL = "/moon.jpg"
-      subtitle = "没想好的话"
+      subtitle = "信心是发动机，热情是燃烧剂。"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
@@ -44,7 +45,7 @@ theme = "DoIt"
     # 是否使用 fraction 扩展语法
     fraction = false
     # 是否使用 fontawesome 扩展语法
-    fontawesome = false
+    fontawesome = true
     # KaTeX 数学公式
     [params.page.math]
       enable = false
@@ -60,13 +61,31 @@ theme = "DoIt"
       keepStatic = false
       # 是否使侧边目录自动折叠展开
       auto = false
+    [params.page.header]
+      # 是否开启标题自动编号
+      [params.page.header.number]
+        enable = true
+        [params.page.header.number.format]
+          h2 = "{h2} {title}"
+          h3 = "{h2}.{h3} {title}"
+          h4 = "{h2}.{h3}.{h4} {title}"
+          h5 = "{h2}.{h3}.{h4}.{h5} {title}"
+          h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
 
   [params.search]
     enable = true
     # 搜索引擎的类型 ("algolia", "fuse")
     type = "fuse"
-    [params.search.fuse]
-      minMatchCharLength = 1
+    [search.fuse]
+      isCaseSensitive = false
+      minMatchCharLength = 2
+      findAllMatches = false
+      location = 0
+      threshold = 0.1
+      distance = 100
+      ignoreLocation = true
+      useExtendedSearch = false
+      ignoreFieldNorm = false
 
 # 作者配置
 [author]
@@ -77,21 +96,25 @@ theme = "DoIt"
     identifier = "posts"
     name = "归档"
     url = "/posts/"
+    pre="<i class='fas fa-archive fa-sm'></i>"
     weight = 1
   [[menu.main]]
     identifier = "categories"
     name = "分类"
     url = "/categories/"
+    pre="<i class='fas fa-icons fa-sm'></i>"
     weight = 2
   [[menu.main]]
     identifier = "tags"
     name = "标签"
     url = "/tags/"
+    pre = "<i class='fas fa-tags fa-sm'></i>"
     weight = 3
   [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about"
+    pre="<i class='fas fa-paper-plane fa-sm'></i>"
     weight = 4
 
 [markup]
