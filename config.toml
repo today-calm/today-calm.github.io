@@ -111,17 +111,11 @@ theme = "DoIt"
     pre = "<i class='fas fa-tags fa-sm'></i>"
     weight = 3
   [[menu.main]]
-    identifier = "remember"
-    name = "记得"
-    url = "/remember-list"
-    pre = "<i class='fas fa-running'></i>"
-    weight = 4
-  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about"
     pre="<i class='fas fa-paper-plane fa-sm'></i>"
-    weight = 5
+    weight = 9
 
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
@@ -141,8 +135,7 @@ theme = "DoIt"
   category = "categories"
   tag = "tags"
   series = "series"
-  # Hugo 支持自定义 taxonomy，但 DoIt 主题没有支持自定义 taxonomy 的渲染，用不了
-  # remember = 'remembers'
+  # Hugo 支持自定义 taxonomy，但 DoIt 主题没有支持自定义 taxonomy 的渲染，先不添加了
 
 # 配合 Obsidian，需要对目录重新映射
 [module]

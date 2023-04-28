@@ -1,10 +1,10 @@
 ---
 title: "Hugo、Obsidian结合实践"
 date: 2023-04-22T23:35:23+08:00
-lastmod: 2023-04-26T01:05:03+08:00
+lastmod: 2023-04-28T17:27:35+08:00
 categories: ["工具"]
-tags: ["blog"]
-summary: ""
+tags: ["Hugo", "Obsidian"]
+summary: "使用 Obsidian 和 Hugo 快速发布一篇文章"
 ---
 
 ## 背景
@@ -121,13 +121,13 @@ Hugo 在渲染文章时需要用到 front matter 中的信息，手动创建太�
 一般在创建文件时使用模板就够了，如果想手动插入模板，也可以，在命令面板中输入 `Templater: Open Insert Template Modal` 即可。
 
 当前我的模板是：
-```yaml
+```toml
 ---
 title: ""
 date: <% tp.file.creation_date("YYYY-MM-DD[T]HH:mm:ss[+08:00]") %>
 lastmod: 
 categories: ["<% tp.file.folder(true).split('/')[0] %>"]
-tags: ["<% tp.file.folder(true).split('/').slice(-1) %>"]
+tags: [""]
 summary: ""
 ---
 
@@ -143,7 +143,9 @@ summary: ""
 - `YAML Title`：用文件名更新 `title`
 - `YAML Timestamp`：用当前文件的最后修改日期更新 Date Modified Key。为了和 Hugo 的 key 一致，这里把 Date Modified Key 配置成 `lastmod`
 
-注：[Date Modified 使用当前时间而非最后修改时间](https://github.com/platers/obsidian-linter/issues/628) 不是 bug，而是正常的设计逻辑。因为如果当前文件中 Date Modified 的值不正确，使用最后修改时间更新 Date Modified，会导致文件的修改时间变化，这样每次 lint 都会更新，无限循环。使用当前时间即可解决这个问题，有一点误差问题不大。
+注：
+- [Date Modified 使用当前时间而非最后修改时间](https://github.com/platers/obsidian-linter/issues/628) 不是 bug，而是正常的设计逻辑。因为如果当前文件中 Date Modified 的值不正确，使用最后修改时间更新 Date Modified，会导致文件的修改时间变化，这样每次 lint 都会更新，无限循环。使用当前时间即可解决这个问题，有一点误差问题不大。
+- 我的 front matter 使用了 TOML 格式（和 DoIt 主题保持一致），但该插件的一些配置是针对 YAML 的，所以不确定是否出问题。另外，Obsidian 的 front matter 只支持 YAML、JSON。
 
 ## 最后
 
