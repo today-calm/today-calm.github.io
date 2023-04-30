@@ -1,7 +1,7 @@
 ---
-title: "Hugo上手"
+title: "Hugo 上手"
 date: 2023-04-01T15:50:55+08:00
-lastmod: 2023-04-28T17:27:37+08:00
+lastmod: 2023-04-30T21:08:28+08:00
 categories: ["工具"]
 tags: ["Hugo"]
 summary: "世界上最快的 SSG 框架 Hugo 的使用方法"

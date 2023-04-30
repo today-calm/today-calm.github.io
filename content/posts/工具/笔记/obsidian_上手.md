@@ -1,7 +1,7 @@
 ---
-title: "Obsidian上手"
+title: "Obsidian 上手"
 date: 2023-04-19T22:15:14+08:00
-lastmod: 2023-04-28T17:08:20+08:00
+lastmod: 2023-04-30T21:10:58+08:00
 categories: ["工具"]
 tags: ["Obsidian"]
 summary: "Markdown 笔记软件 Obsidian 的使用方法"

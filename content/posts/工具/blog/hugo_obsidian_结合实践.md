@@ -1,7 +1,7 @@
 ---
-title: "Hugo、Obsidian结合实践"
+title: "Hugo、Obsidian 结合实践"
 date: 2023-04-22T23:35:23+08:00
-lastmod: 2023-04-28T17:27:35+08:00
+lastmod: 2023-04-30T21:08:12+08:00
 categories: ["工具"]
 tags: ["Hugo", "Obsidian"]
 summary: "使用 Obsidian 和 Hugo 快速发布一篇文章"
@@ -139,8 +139,6 @@ summary: ""
 ### Linter 插件
 
 配置：
-- `Force YAML Escape`：指定需要用引号包裹的字段，我这里配置了 `title`
-- `YAML Title`：用文件名更新 `title`
 - `YAML Timestamp`：用当前文件的最后修改日期更新 Date Modified Key。为了和 Hugo 的 key 一致，这里把 Date Modified Key 配置成 `lastmod`
 
 注：
