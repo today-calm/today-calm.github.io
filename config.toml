@@ -111,6 +111,12 @@ theme = "DoIt"
     pre = "<i class='fas fa-tags fa-sm'></i>"
     weight = 3
   [[menu.main]]
+    identifier = "list"
+    name = "清单"
+    url = "/categories/清单/"
+    pre = "<i class='fas fa-list fa-sm'></i>"
+    weight = 4
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about"
