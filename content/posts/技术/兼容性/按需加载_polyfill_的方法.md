@@ -1,9 +1,9 @@
 ---
 title: "按需加载 polyfill 的方法"
 date: 2023-04-05T14:42:18+08:00
-lastmod: 2023-04-30T21:05:52+08:00
+lastmod: 2023-05-01T11:57:59+08:00
 categories: ["技术"]
-tags: ["polyfill"]
+tags: ["兼容性", "polyfill"]
 summary: "本文记录了 3 种按需加载 polyfill 的方法"
 ---
 

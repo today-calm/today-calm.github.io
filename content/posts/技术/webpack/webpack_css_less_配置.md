@@ -1,13 +1,13 @@
 ---
 title: "Webpack CSS、Less 配置"
 date: 2023-04-02T16:33:29+08:00
-lastmod: 2023-04-30T21:20:47+08:00
+lastmod: 2023-04-30T21:42:57+08:00
 categories: ["技术"]
 tags: ["Webpack"]
 summary: "本文是 [A mostly complete guide to webpack 5 (2020)](https://www.valentinog.com/blog/webpack/#entry-point) 的学习笔记，主要关注 Css、Less 的处理"
 ---
 
-本文是 [A mostly complete guide to webpack 5 (2020)](https://www.valentinog.com/blog/webpack/#entry-point) 的学习笔记，主要关注 Css、Less 的处理
+本文是 [A mostly complete guide to webpack 5 (2020)](https://www.valentinog.com/blog/webpack/#entry-point) 的学习笔记，主要关注 CSS、Less 的处理
 
 ## css 配置
 
