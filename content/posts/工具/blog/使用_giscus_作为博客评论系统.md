@@ -1,7 +1,7 @@
 ---
 title: "使用 giscus 作为博客评论系统"
 date: 2023-05-02T17:03:53+08:00
-lastmod: 2023-05-02T19:40:45+08:00
+lastmod: 2023-05-02T20:20:34+08:00
 categories: ["工具"]
 tags: ["Hugo", "giscus"]
 summary: "我的博客目前还差评论功能，本文利用 giscus 来添加评论功能。"
@@ -60,7 +60,7 @@ giscus 其实参考了 [utterances](https://github.com/utterance/utterances)，u
 [params.page.comment]
   enable = true
   [params.page.comment.giscus]
-    enable = false
+    enable = true
     # owner/repo
     dataRepo = ""
     dataRepoId = ""

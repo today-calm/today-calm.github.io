@@ -1,7 +1,7 @@
 ---
 title: "Hugo 上手"
 date: 2023-04-01T15:50:55+08:00
-lastmod: 2023-04-30T21:08:28+08:00
+lastmod: 2023-05-02T20:05:00+08:00
 categories: ["工具"]
 tags: ["Hugo"]
 summary: "世界上最快的 SSG 框架 Hugo 的使用方法"
@@ -130,4 +130,4 @@ git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIt
 ```bash
 hugo server --disableFastRender --buildFuture
 ```
-3. [文章上方的作者头像是否支持修改？](https://github.com/HEIGE-PCloud/DoIt/issues/920)：被文档误导了，文档里有相应字段，但实际上不支持修改
+3. [文章上方的作者头像是否支持修改？](https://github.com/HEIGE-PCloud/DoIt/issues/920)：文档里有相应字段，但实际上不支持修改

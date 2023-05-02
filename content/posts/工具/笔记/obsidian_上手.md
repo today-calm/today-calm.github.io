@@ -1,7 +1,7 @@
 ---
 title: "Obsidian 上手"
 date: 2023-04-19T22:15:14+08:00
-lastmod: 2023-04-30T21:10:58+08:00
+lastmod: 2023-05-02T22:14:39+08:00
 categories: ["工具"]
 tags: ["Obsidian"]
 summary: "Markdown 笔记软件 Obsidian 的使用方法"
@@ -59,7 +59,11 @@ summary: "Markdown 笔记软件 Obsidian 的使用方法"
 - Minimal Theme Settings：上面已经提到了。  
 - [Templater](https://github.com/SilentVoid13/Templater)：强大的模板语法，有许多内置函数。可使用模板创建文件，适合自动创建 front matter。
 - [Linter](https://github.com/platers/obsidian-linter)：根据配置的规则格式化 md 文件，内置了许多 lint 规则，并且允许自定义正则替换规则，极大地改善了编辑体验。
-- [Code Editor Shortcuts](https://github.com/timhor/obsidian-editor-shortcuts)：提供了类似 VSCode 的快捷键，弥补 Obsidian 快捷键不足的缺点。
+- [Code Editor Shortcuts](https://github.com/timhor/obsidian-editor-shortcuts)：提供了类似 VSCode 的快捷键
+- [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian)：快速创建表格，按 tab 就完事了
+- [Emoji Toolbar](https://github.com/oliveryh/obsidian-emoji-toolbar)：快速添加 emoji
+- [Paste Image Rename](https://github.com/reorx/obsidian-paste-image-rename)：粘贴图片到 Obsidian 时，自动修改图片名称  
+  用这个插件主要是因为 Obsidian 粘贴图片的默认名称是带空格的，尽管在 Markdown 中会将空格转义为 `%20`，但在某些情况下仍会造成 bug（在使用 Hugo Template 时遇到过找不到图片的问题，发现原因后气炸），所以需要用这个插件生成不带空格的名称
 
 Templater 和 Linter 两个插件稍微复杂一点，下面介绍一下 Linter 的使用，Templater 在之后结合 Hugo 发布文章时再介绍。
 
