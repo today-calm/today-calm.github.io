@@ -1,7 +1,7 @@
 ---
 title: "Browserslist 介绍"
 date: 2023-04-09T15:00:00+08:00
-lastmod: 2023-05-02T13:26:41+08:00
+lastmod: 2023-05-02T14:06:54+08:00
 categories: ["技术"]
 tags: ["兼容性"]
 summary: ""
