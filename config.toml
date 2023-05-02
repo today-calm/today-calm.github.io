@@ -38,6 +38,11 @@ theme = "DoIt"
       enable = true
       paginate = 5
 
+  # Section (所有文章) 页面配置
+  [params.section]
+    # 每页显示文章数量
+    paginate = 20
+
   # 文章页面配置
   [params.page]
     # 是否使用 ruby 扩展语法
@@ -81,7 +86,24 @@ theme = "DoIt"
           h4 = "{h2}.{h3}.{h4} {title}"
           h5 = "{h2}.{h3}.{h4}.{h5} {title}"
           h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
-
+    # 评论系统设置
+    [params.page.comment]
+      enable = true
+      # giscus 评论系统设置
+      [params.page.comment.giscus]
+        enable = true
+        # 字段含义参考 https://giscus.app/zh-CN
+        dataRepo = "today-calm/blog-giscus"
+        dataRepoId = "R_kgDOJdygmg"
+        dataCategory = "Announcements"
+        dataCategoryId = "DIC_kwDOJdygms4CWMj8"
+        dataMapping = "pathname"
+        dataReactionsEnabled = "0"
+        dataEmitMetadata = "0"
+        dataInputPosition = "top"
+        lightTheme = "light"
+        darkTheme = "dark"
+        dataLang = "zh-CN"
   [params.search]
     enable = true
     # 搜索引擎的类型 ("algolia", "fuse")
