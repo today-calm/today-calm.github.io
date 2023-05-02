@@ -1,0 +1,16 @@
+<!-- 参考 https://github.com/bep/portable-hugo-links/blob/master/layouts/_default/_markup/render-image.html -->
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+{{ $path := "" }}
+{{- if and (not $img) .Page.File -}}
+{{ $path = path.Join .Page.File.Dir .Destination }}
+{{- $path = printf "/%s" $path -}}
+{{- end -}}
+{{- with $path -}}
+<figure>
+  <img src="{{ $path }}" alt="{{ $.Text }}" />
+  <figcaption class="image-caption">
+    {{ with $.Title | safeHTML }}{{ . }}{{ end }}
+  </figcaption>
+</figure>
+{{- else -}}
+<img src="{{ .Destination | safeURL }}" alt="{{ $.Text }}" />{{- end -}}
