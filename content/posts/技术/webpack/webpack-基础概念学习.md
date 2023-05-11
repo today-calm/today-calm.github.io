@@ -1,7 +1,7 @@
 ---
 title: "Webpack 基础概念学习"
 date: 2023-04-02T10:44:02+08:00
-lastmod: 2023-05-02T13:26:08+08:00
+lastmod: 2023-05-11T08:55:43+08:00
 categories: ["技术"]
 tags: ["Webpack"]
 summary: "从官网学习最基础的概念"
@@ -14,7 +14,7 @@ summary: "从官网学习最基础的概念"
 - entry 指的是 js  
 - entry 可有多个（multi entries），下面这张图较容易理解
 
-![multi entries](../../assets/image_20230402121928.png)  
+![multi entries](../../assets/image-20230402121928.png)  
 图片来自 [Webpack 101: An introduction to Webpack](https://medium.com/hootsuite-engineering/webpack-101-an-introduction-to-webpack-3f59d21edeba)  
 
 接下来实操一下

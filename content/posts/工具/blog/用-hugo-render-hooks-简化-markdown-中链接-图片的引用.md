@@ -1,7 +1,7 @@
 ---
 title: "用 Hugo Render Hooks 简化 Markdown 中链接、图片的引用"
 date: 2023-05-02T14:20:34+08:00
-lastmod: 2023-05-02T23:55:07+08:00
+lastmod: 2023-05-11T08:52:35+08:00
 categories: ["工具"]
 tags: ["Hugo", "Obsidian"]
 summary: "Render Hooks 可以允许 Markdown 中链接、图片使用相对路径引用，保证资源在 Obsidian、GitHub Pages、GitHub 仓库均正常展示"
@@ -9,7 +9,7 @@ summary: "Render Hooks 可以允许 Markdown 中链接、图片使用相对路�
 
 ## 背景
 
-在 Obsidian 中链接自己的其他文章，Obsidian 能够正常跳转，但在 Hugo 中无法正确跳转，因为 Hugo 构造的链接路径有问题。之前在 [Hugo Obsidian 结合实践](hugo_obsidian_结合实践.md#使用图片资源) 文章中有处理过图片引用的问题，但没有解决文章引用的问题。
+在 Obsidian 中链接自己的其他文章，Obsidian 能够正常跳转，但在 Hugo 中无法正确跳转，因为 Hugo 构造的链接路径有问题。之前在 [Hugo Obsidian 结合实践](hugo-obsidian-结合实践.md#使用图片资源) 文章中有处理过图片引用的问题，但没有解决文章引用的问题。
 
 搜索了下，[这个帖子](https://discourse.gohugo.io/t/how-to-render-markdown-url-with-md-to-correct-link/26372)提供了解决方案，即利用 [Markdown Render Hooks](https://gohugo.io/templates/render-hooks/) 修正 Hugo 生成的链接格式，同时也提供了一个[允许相对路径引用的例子](https://github.com/bep/portable-hugo-links/tree/master/layouts/_default/_markup)。
 

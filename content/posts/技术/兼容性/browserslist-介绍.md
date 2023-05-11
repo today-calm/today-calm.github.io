@@ -1,7 +1,7 @@
 ---
 title: "Browserslist 介绍"
 date: 2023-04-09T15:00:00+08:00
-lastmod: 2023-05-02T14:06:54+08:00
+lastmod: 2023-05-11T08:55:56+08:00
 categories: ["技术"]
 tags: ["兼容性"]
 summary: ""
@@ -42,7 +42,7 @@ summary: ""
 
 通过 `or/,`、`and`、`not` 组合查询，与集合的运算一致
 
-![query composition](../../assets/image_20230501121457.png)
+![query composition](../../assets/image-20230501121457.png)
 
 注：
 - 换行等同于 `or`

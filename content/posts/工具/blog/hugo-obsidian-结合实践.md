@@ -1,7 +1,7 @@
 ---
 title: "Hugo、Obsidian 结合实践"
 date: 2023-04-22T23:35:23+08:00
-lastmod: 2023-05-02T23:00:53+08:00
+lastmod: 2023-05-11T08:52:04+08:00
 categories: ["工具"]
 tags: ["Hugo", "Obsidian"]
 summary: "使用 Obsidian 和 Hugo 快速发布一篇文章"
@@ -47,7 +47,7 @@ Hugo 项目在创建时就使用了 git 管理，所以首先要配置的是 .gi
 
 ## 使用图片资源
 
-**更新：以下方法还是比较复杂，不推荐使用了，更优的方法可以参考我的另一篇文章 [用 Hugo Render Hooks 简化 Markdown 中链接、图片的引用](用_hugo_render_hooks_简化_markdown_中链接_图片的引用.md)**
+**更新：以下方法还是比较复杂，不推荐使用了，更优的方法可以参考我的另一篇文章 [用 Hugo Render Hooks 简化 Markdown 中链接、图片的引用](用-hugo-render-hooks-简化-markdown-中链接-图片的引用.md)**
 
 ---
 

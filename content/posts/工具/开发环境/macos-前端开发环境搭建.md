@@ -1,7 +1,7 @@
 ---
 title: "macOS 前端开发环境搭建"
 date: 2022-11-26T17:29:33+08:00
-lastmod: 2023-05-02T13:18:30+08:00
+lastmod: 2023-05-11T08:50:43+08:00
 categories: ["工具"]
 tags: ["开发环境"]
 summary: ""
@@ -20,7 +20,7 @@ git config --global user.email "xxx@yyy.com"
 
 ## VSCode
 
-单独记录，见 [VSCode 配置](vscode_配置.md)
+单独记录，见 [VSCode 配置](vscode-配置.md)
 
 ## homebrew
 
@@ -69,7 +69,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 ## oh-my-zsh
 
-单独记录，见 [Oh My Zsh 配置](oh_my_zsh_配置.md)
+单独记录，见 [Oh My Zsh 配置](oh-my-zsh-配置.md)
 
 ## nvm
 
