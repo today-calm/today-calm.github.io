@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "wubi98";
+  src: url("/fonts/98WB-0.otf") format("opentype");
+}
+
+table {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei UI", wubi98, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
