@@ -1,8 +1,10 @@
 ---
 title: "Mac 五笔输入法的选择"
 date: 2023-07-20T22:24:47+08:00
-lastmod: 2023-07-20T22:43:11+08:00
+lastmod: 2023-07-23T14:39:12+08:00
 categories: ["研究"]
+series: ["掌握 98 五笔"]
+series_weight: 2
 tags: ["五笔", "输入法"]
 summary: ""
 ---
