@@ -51,6 +51,8 @@ theme = "DoIt"
     fraction = false
     # 是否使用 fontawesome 扩展语法
     fontawesome = true
+    # 是否在文章开头显示系列导航
+    seriesNavigation = true
     # KaTeX 数学公式
     [params.page.math]
       enable = false
@@ -137,17 +139,23 @@ theme = "DoIt"
     pre="<i class='fas fa-icons fa-sm'></i>"
     weight = 2
   [[menu.main]]
+    identifier = "series"
+    name = "系列"
+    url = "/series/"
+    pre = "<i class='fas fa-book fa-sm'></i>"
+    weight = 3
+  [[menu.main]]
     identifier = "tags"
     name = "标签"
     url = "/tags/"
     pre = "<i class='fas fa-tags fa-sm'></i>"
-    weight = 3
+    weight = 4
   [[menu.main]]
     identifier = "list"
     name = "清单"
     url = "/categories/清单/"
     pre = "<i class='fas fa-list fa-sm'></i>"
-    weight = 4
+    weight = 5
   [[menu.main]]
     identifier = "about"
     name = "关于"

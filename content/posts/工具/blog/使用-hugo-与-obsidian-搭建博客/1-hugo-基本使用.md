@@ -1,8 +1,10 @@
 ---
-title: "Hugo 上手"
+title: "Hugo 基本使用"
 date: 2023-04-01T15:50:55+08:00
-lastmod: 2023-05-02T20:05:00+08:00
+lastmod: 2023-07-23T13:11:22+08:00
 categories: ["工具"]
+series: ["使用 Hugo 与 Obsidian 搭建博客"]
+series_weight: 1
 tags: ["Hugo"]
 summary: "世界上最快的 SSG 框架 Hugo 的使用方法"
 ---

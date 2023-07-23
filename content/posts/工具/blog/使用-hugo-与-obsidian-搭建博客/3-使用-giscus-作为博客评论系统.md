@@ -1,8 +1,10 @@
 ---
 title: "使用 giscus 作为博客评论系统"
 date: 2023-05-02T17:03:53+08:00
-lastmod: 2023-05-02T20:20:34+08:00
+lastmod: 2023-07-23T13:11:19+08:00
 categories: ["工具"]
+series: ["使用 Hugo 与 Obsidian 搭建博客"]
+series_weight: 3
 tags: ["Hugo", "giscus"]
 summary: "我的博客目前还差评论功能，本文利用 giscus 来添加评论功能。"
 ---
