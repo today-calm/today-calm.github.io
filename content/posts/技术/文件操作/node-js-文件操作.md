@@ -163,3 +163,7 @@ const files = dirCont.filter( ( elm ) => elm.match(/.*\.(html?)/ig));
 ```
 
 通过 `fs.readdirSync` 读取文件夹下的所有文件名，通过字符串的 match 方法正则匹配，用 filter 过滤匹配的文件
+
+## 学习资源
+
+Node 官网有文件操作的学习文章：[https://nodejs.dev/en/learn/nodejs-file-stats/](https://nodejs.dev/en/learn/nodejs-file-stats/)，可进一步学习
